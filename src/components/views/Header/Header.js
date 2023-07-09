@@ -1,3 +1,9 @@
+import { NavBar } from '../NavBar/NavBar';
+
 export const Header = () => {
-  return <div>hello</div>;
+  return (
+    <div>
+      <NavBar />
+    </div>
+  );
 };
