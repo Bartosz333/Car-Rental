@@ -4,7 +4,7 @@ const initialState = {
   passenger: {
     cars: [
       {
-        model: 'Audi A4',
+        model: 'Audi-A4',
         year: 2021,
         engine: 'diesel',
         capacity: '2.0L',
@@ -12,7 +12,7 @@ const initialState = {
         pricePerDay: 100,
       },
       {
-        model: 'BMW 3 Series',
+        model: 'BMW-3',
         year: 2022,
         engine: 'petrol',
         capacity: '1.8L',
@@ -20,7 +20,7 @@ const initialState = {
         pricePerDay: 115,
       },
       {
-        model: 'Mercedes C-Class',
+        model: 'Mercedes-C',
         year: 2023,
         engine: 'hybrid',
         capacity: '2.5L',
@@ -32,7 +32,7 @@ const initialState = {
   commercial: {
     cars: [
       {
-        model: 'Ford Transit',
+        model: 'Ford-Transit',
         year: 2021,
         engine: 'diesel',
         capacity: '2.0L',
@@ -40,7 +40,7 @@ const initialState = {
         pricePerDay: 75,
       },
       {
-        model: 'Renault Master',
+        model: 'Renault-Master',
         year: 2022,
         engine: 'diesel',
         capacity: '2.3L',
@@ -48,7 +48,7 @@ const initialState = {
         pricePerDay: 85,
       },
       {
-        model: 'Volkswagen Crafter',
+        model: 'Volkswagen-Crafter',
         year: 2023,
         engine: 'diesel',
         capacity: '2.5L',

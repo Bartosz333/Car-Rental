@@ -6,6 +6,7 @@ import { Home } from './components/pages/Home/Home';
 import { PassengerCars } from './components/pages/PassengerCars/PassengerCars';
 import { CommercialCars } from './components/pages/CommercialCars/CommercialCars';
 import { NotFound } from './components/views/NotFound';
+import { Contact } from './components/views/Contact/Contact';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path='*' element={<NotFound />}></Route>
       </Routes>
       <Header />
+      <Contact />
       <Footer />
     </Container>
   );
