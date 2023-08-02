@@ -1,4 +1,4 @@
-import CarBooking from '../CarBooking/CarBooking';
+import { CarBooking } from '../CarBooking/CarBooking';
 
 export const CarsItem = ({ car }) => {
   return (

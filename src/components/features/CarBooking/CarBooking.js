@@ -1,19 +1,32 @@
-import { useState } from 'react';
-import DatePicker from 'react-datepicker';
+import React, { useState } from 'react';
+import { Confirmation } from '../Confirmation/Confirmation';
+import { ReservationForm } from '../ReservationForm/ReservationForm';
 
-const CarBooking = () => {
-  const [selectedDate, setSelectedDate] = useState(null);
+export const CarBooking = () => {
+  const [isSubmitted, setIsSubmitted] = useState(false);
+  const [reservationData, setReservationData] = useState(null);
+
+  const handleFormSubmit = (data) => {
+    setReservationData(data);
+    setIsSubmitted(true);
+  };
+
+  const handleReset = () => {
+    setIsSubmitted(false);
+    setReservationData(null);
+  };
 
   return (
     <div>
-      <h2>Select a booking date:</h2>
-      <DatePicker
-        selected={selectedDate}
-        onChange={(date) => setSelectedDate(date)}
-        dateFormat='yyyy-MM-dd'
-      />
+      <h2>Car Booking</h2>
+      {isSubmitted ? (
+        <Confirmation
+          reservationData={reservationData}
+          handleReset={handleReset}
+        />
+      ) : (
+        <ReservationForm handleFormSubmit={handleFormSubmit} />
+      )}
     </div>
   );
 };
-
-export default CarBooking;

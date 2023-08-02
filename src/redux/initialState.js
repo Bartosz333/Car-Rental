@@ -9,6 +9,7 @@ export const initialState = {
         capacity: '2.0L',
         seatingCapacity: 5,
         pricePerDay: 100,
+        reservedDate: [],
       },
       {
         id: '2',
@@ -18,6 +19,7 @@ export const initialState = {
         capacity: '1.8L',
         seatingCapacity: 5,
         pricePerDay: 115,
+        reservedDate: [],
       },
       {
         id: '3',
@@ -27,6 +29,7 @@ export const initialState = {
         capacity: '2.5L',
         seatingCapacity: 4,
         pricePerDay: 125,
+        reservedDate: [],
       },
     ],
   },
@@ -40,6 +43,7 @@ export const initialState = {
         capacity: '2.0L',
         seatingCapacity: 3,
         pricePerDay: 75,
+        reservedDate: [],
       },
       {
         id: '5',
@@ -49,6 +53,7 @@ export const initialState = {
         capacity: '2.3L',
         seatingCapacity: 2,
         pricePerDay: 85,
+        reservedDate: [],
       },
       {
         id: '6',
@@ -58,6 +63,7 @@ export const initialState = {
         capacity: '2.5L',
         seatingCapacity: 3,
         pricePerDay: 90,
+        reservedDate: [],
       },
     ],
   },

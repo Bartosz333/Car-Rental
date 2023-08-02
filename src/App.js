@@ -7,17 +7,19 @@ import { PassengerCars } from './components/pages/PassengerCars/PassengerCars';
 import { CommercialCars } from './components/pages/CommercialCars/CommercialCars';
 import { NotFound } from './components/views/NotFound';
 import { Contact } from './components/views/Contact/Contact';
+import { NavBar } from './components/views/NavBar/NavBar';
 
 function App() {
   return (
     <Container>
+      <Header />
       <Routes>
         <Route path='/' element={<Home />}></Route>
         <Route path='/passenger' element={<PassengerCars />}></Route>
         <Route path='/commercial' element={<CommercialCars />}></Route>
         <Route path='*' element={<NotFound />}></Route>
       </Routes>
-      <Header />
+      <NavBar />
       <Contact />
       <Footer />
     </Container>
